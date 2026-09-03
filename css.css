@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: black;
+}
+
+#perfil-pai{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 4vh 0 2vh;
+}
+
+#perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4vh 0 2vh;
+}
+
+#perfil img{
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+}
+
+#perfil h1{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 12px;
+    font-family: "Doppio One", sans-serif;
+    font-style: normal;
+}
+
+#perfil p{
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#projetos-pai{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 6vh 5vw;
+}
+
+.projeto-destaque{
+    display: block;
+    background-color: #111;
+    border: 2px solid orange;
+    border-radius: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.projeto-destaque:hover{
+    border-color: white;
+    transform: scale(1.02);
+}
+
+.projeto-destaque:active{
+    transform: scale(0.98);
+}
+
+.destaque{
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.conteudo-deastaque{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.conteudo-deastaque img{
+    width: 24px;
+    height: 24px;
+}
+
+.texto{
+    flex: 1;
+}
+
+.titulo{
+    color: white;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitulo{
+    color: #999;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.seta{
+    color: #888;
+}
+
+.projetos{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: #111;
+    border-radius: 50px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.projetos:hover{
+    border-color: white;
+    transform: scale(1.02);
+}
+
+.projetos:active{
+    transform: scale(0.98);
+}
+
+.projetos img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.projetos p{
+    color: white;
+    flex: 1;
+    font-size: 0.95rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.projetos span{
+    color: #888;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projeto-destaque,
+    .projetos{
+        transition: none;
+    }
+}
