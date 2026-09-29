@@ -177,3 +177,16 @@ body{
         transition: none;
     }
 }
+
+footer{
+    text-align: center;
+    padding: 3vh 0;
+}
+
+footer p{
+    color: #555;
+    font-size: 11px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+
